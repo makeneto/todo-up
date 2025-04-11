@@ -120,29 +120,6 @@ const SetIcon = styled.div`
     }
 `
 
-const SelectIconsStyled = styled.div`
-    background-color: ${props => props.color === "Work" ? "rgba(196, 213, 242, 0.23)" : props.color === "Personal" ? "rgba(222, 247, 237, 0.35)" : "rgba(243, 227, 215, 0.19)"};
-    height: 13.8rem;
-    padding: 1.4rem;
-    border-radius: .6rem;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    overflow-y: auto;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
-    
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-    & ion-icon {
-        font-size: 1.5rem;
-        color: ${props => props.color === "Work" ? "#3e5fc2" : props.color === "Personal" ? "#16c381" : "#c79708"};
-    }
-`
-
 export default function AddModal() {
     const { register, handleSubmit, reset, formState: { errors } } = useForm()
     const {
@@ -154,6 +131,7 @@ export default function AddModal() {
         tab,
         setTab
     } = useContext(AppContext)
+
     const [showIcons, setShowIcons] = useState(false)
     const [selectedIcon, setSelectedIcon] = useState("brush-outline")
 
