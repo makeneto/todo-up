@@ -1,5 +1,29 @@
 import { useContext } from "react"
 import { AppContext } from "../../context/AppContext"
+import styled from "styled-components"
+
+const SelectIconsStyled = styled.div`
+    background-color: ${props => props.color === "Work" ? "rgba(196, 213, 242, 0.23)" : props.color === "Personal" ? "rgba(222, 247, 237, 0.35)" : "rgba(243, 227, 215, 0.19)"};
+    height: 13.8rem;
+    padding: 1.4rem;
+    border-radius: .6rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    & ion-icon {
+        font-size: 1.5rem;
+        color: ${props => props.color === "Work" ? "#3e5fc2" : props.color === "Personal" ? "#16c381" : "#c79708"};
+    }
+`
 
 export default function SelectIcons({ handleIconClick }) {
     const { modalName } = useContext(AppContext)
@@ -40,13 +64,11 @@ export default function SelectIcons({ handleIconClick }) {
             <ion-icon name="star-outline" onClick={() => handleIconClick("star-outline")}></ion-icon>
             <ion-icon name="pricetag-outline" onClick={() => handleIconClick("pricetag-outline")}></ion-icon>
             <ion-icon name="link-outline" onClick={() => handleIconClick("link-outline")}></ion-icon>
-            <ion-icon name="anchor-outline" onClick={() => handleIconClick("anchor-outline")}></ion-icon>
             <ion-icon name="archive-outline" onClick={() => handleIconClick("archive-outline")}></ion-icon>
             <ion-icon name="arrow-back-outline" onClick={() => handleIconClick("arrow-back-outline")}></ion-icon>
             <ion-icon name="arrow-forward-outline" onClick={() => handleIconClick("arrow-forward-outline")}></ion-icon>
             <ion-icon name="bar-chart-outline" onClick={() => handleIconClick("bar-chart-outline")}></ion-icon>
             <ion-icon name="bookmark-outline" onClick={() => handleIconClick("bookmark-outline")}></ion-icon>
-            <ion-icon name="camera-off-outline" onClick={() => handleIconClick("camera-off-outline")}></ion-icon>
             <ion-icon name="tv-outline" onClick={() => handleIconClick("tv-outline")}></ion-icon>
             <ion-icon name="cloud-outline" onClick={() => handleIconClick("cloud-outline")}></ion-icon>
             <ion-icon name="code-slash-outline" onClick={() => handleIconClick("code-slash-outline")}></ion-icon>
