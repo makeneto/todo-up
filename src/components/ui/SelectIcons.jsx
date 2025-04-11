@@ -67,7 +67,6 @@ export default function SelectIcons({ handleIconClick }) {
             <ion-icon name="archive-outline" onClick={() => handleIconClick("archive-outline")}></ion-icon>
             <ion-icon name="arrow-back-outline" onClick={() => handleIconClick("arrow-back-outline")}></ion-icon>
             <ion-icon name="arrow-forward-outline" onClick={() => handleIconClick("arrow-forward-outline")}></ion-icon>
-            <ion-icon name="bar-chart-outline" onClick={() => handleIconClick("bar-chart-outline")}></ion-icon>
             <ion-icon name="bookmark-outline" onClick={() => handleIconClick("bookmark-outline")}></ion-icon>
             <ion-icon name="tv-outline" onClick={() => handleIconClick("tv-outline")}></ion-icon>
             <ion-icon name="cloud-outline" onClick={() => handleIconClick("cloud-outline")}></ion-icon>
