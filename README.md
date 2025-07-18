@@ -1,5 +1,5 @@
-# Todo Up
+# TodoUp
 
-TodoMak é um app de lista de tarefas simples, rápido e intuitivo, feito para te ajudar a organizar o dia a dia com praticidade. Adicione e conclua tarefas com facilidade, tudo em uma interface limpa.
+TodoMak is a simple, fast, and intuitive to-do list app designed to help you organize your daily life with ease. Add and complete tasks easily, all within a clean interface.
 
 ![Image](https://github.com/user-attachments/assets/59af415c-50f3-453f-bac3-813d2a798a39)
